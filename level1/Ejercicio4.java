@@ -9,6 +9,10 @@ public class Ejercicio4 {
         int number = scan.nextInt();
         scan.close();
 
-        System.out.println(String.format("El factorial de %s es: %s",number,factorial(number)));
+        System.out.println(String.format(
+            "El factorial de %s es: %s",
+            number,
+            factorial(number)
+        ));
     }
 }

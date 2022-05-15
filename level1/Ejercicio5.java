@@ -14,6 +14,11 @@ public class Ejercicio5 {
         int number2 = scan.nextInt();
         scan.close();
 
-        System.out.println(String.format("%s * %s = %s",number1,number2,multiply(number1,number2)));
+        System.out.println(String.format(
+            "%s * %s = %s",
+            number1,
+            number2,
+            multiply(number1,number2)
+        ));
     }
 }

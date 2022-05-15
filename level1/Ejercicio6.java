@@ -14,6 +14,11 @@ public class Ejercicio6 {
         int number2 = scan.nextInt();
         scan.close();
 
-        System.out.println(String.format("%s elevado a %s = %s",number1,number2,exponent(number1,number2)));
+        System.out.println(String.format(
+            "%s elevado a %s = %s",
+            number1,
+            number2,
+            exponent(number1,number2)
+        ));
     }
 }

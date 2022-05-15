@@ -9,6 +9,12 @@ public class Ejercicio8 {
         String city = scan.nextLine();
         scan.close();
 
-        System.out.println(String.format("%s - %s - %s - %s",city,address,age,name));
+        System.out.println(String.format(
+            "%s - %s - %s - %s",
+            city,
+            address,
+            age,
+            name
+        ));
     }
 }
