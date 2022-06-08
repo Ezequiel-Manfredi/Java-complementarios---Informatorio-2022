@@ -27,6 +27,12 @@ public class Ejercicio5 {
         public LocalDate getBirthday() {
             return birthday;
         }
+        public String fullName() {
+            return this.getLastName() + " " + this.getName();
+        }
+        public Integer getAge() {
+            return Period.between(this.getBirthday(),LocalDate.now()).getYears();
+        }
     }
 
     public static void main(String[] args) {
@@ -43,8 +49,7 @@ public class Ejercicio5 {
         students
             .stream()
             .forEach(s -> ages.put(
-                s.getLastName() + " " + s.getName(),
-                Period.between(s.getBirthday(), LocalDate.now()).getYears()
+                s.fullName(),s.getAge()
             ));
             
         System.out.println(ages);
