@@ -11,7 +11,7 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         List<Integer> numbers = List.of(1, 2, 4, 4, 4);
 
-        Set<Integer> factoredNumbers = numbers
+        Set<Integer> factoredNumbers = Set.copyOf(numbers)
             .stream()
             .map(n -> factorial(n))
             .collect(Collectors.toSet());
